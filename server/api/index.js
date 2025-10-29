@@ -36,8 +36,4 @@ app.post('/api/login', (req, res) => {
 // 处理预检请求（OPTIONS 方法）
 app.options('*', cors());
 
-// 启动服务
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
