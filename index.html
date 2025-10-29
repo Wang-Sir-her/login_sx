@@ -145,12 +145,11 @@
 
             try {
                 // 发送登录请求到后端API
-                const response = await fetch('https://login-sx-git-main-wangs-projects-3ee4f0d2.vercel.app/api/login', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({ username, password })
-
-                });
+                const response = await fetch('https://login-sxhd-1chx-m55mihoe1-wangs-projects-3ee4f0d2.vercel.app/api/login', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ username, password })
+});
 
                 const result = await response.json();
 
@@ -191,3 +190,4 @@
     </script>
 </body>
 </html>
+
